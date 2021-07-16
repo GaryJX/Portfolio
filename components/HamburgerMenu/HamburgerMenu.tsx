@@ -10,7 +10,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = (props) => {
   const { open, onClick } = props
   const [clickedOnce, setClickedOnce] = useState(false)
 
-  const getMenuClass = () => {
+  const getMenuToggleClass = () => {
     // Used to prevent keyframe animation on page load
     // TODO: Investigate better solution for this issue
     if (clickedOnce) {
@@ -22,7 +22,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = (props) => {
 
   return (
     <button
-      className={`${styles.hamburgerMenu} ${getMenuClass()}`}
+      className={`${styles.hamburgerMenu} ${getMenuToggleClass()}`}
       onClick={() => {
         setClickedOnce(true)
         onClick()
