@@ -1,6 +1,6 @@
 @use "../../styles/mixins";
 
-$menuToggleTiming: 0.3s ease-in-out forwards;
+$menuToggleTiming: 400ms ease-in-out forwards;
 
 .hamburgerMenu {
   display: flex;
@@ -49,7 +49,7 @@ $menuToggleTiming: 0.3s ease-in-out forwards;
   }
 }
 
-// Animations for opening menu
+// Open Menu Animation
 @keyframes openLine1 {
   0% {
     transform: translateY(0);
@@ -87,7 +87,8 @@ $menuToggleTiming: 0.3s ease-in-out forwards;
   }
 }
 
-// Animations for closing menu
+// TODO: Current issue is that this animation runs on page load
+// Close Menu Animation
 @keyframes closeLine1 {
   0% {
     transform: translateY(8px) rotate(225deg);
