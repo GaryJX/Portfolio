@@ -1,0 +1,33 @@
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 5px;
+
+  .hamburgerLine {
+    width: 25px;
+    height: 3px;
+    border-radius: 6px;
+    background-color: currentColor;
+    transition: transform 0.1s linear, background-color 0.1s linear;
+  }
+
+  &:hover {
+    .hamburgerLine {
+      background-color: grey;
+    }
+  }
+
+  &:active {
+    .hamburgerLine {
+      &:first-child {
+        transform: translateY(-0.25em);
+      }
+
+      &:last-child {
+        transform: translateY(0.25em);
+      }
+    }
+  }
+}
