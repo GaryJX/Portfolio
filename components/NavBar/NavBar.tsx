@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import HamburgerMenu from '@/components/HamburgerMenu/HamburgerMenu'
+import ThemeToggle from '@/components/ThemeToggle/ThemeToggle'
 import styles from './NavBar.module.scss'
 
 const NavBar: React.FC = () => {
@@ -38,7 +39,7 @@ const NavBar: React.FC = () => {
         </div>
 
         <div className={styles.navBtns}>
-          <div>Toggle Theme Button</div>
+          <ThemeToggle />
           <HamburgerMenu
             open={menuOpen}
             onClick={() => setMenuOpen((prev) => !prev)}

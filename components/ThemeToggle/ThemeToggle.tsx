@@ -4,7 +4,7 @@ const ThemeToggle: React.FC = (props) => {
   // const { open, onClick } = props
 
   return (
-    <div />
+    <div>TODO: Theme Toggle</div>
     // <button
     //   className={`${styles.hamburgerMenu} ${
     //     open ? styles.open : styles.closed
