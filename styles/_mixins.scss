@@ -21,3 +21,9 @@ $breakpoints: (
   width: 100%;
   margin: 0 auto;
 }
+
+@mixin container {
+  max-width: 1000px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}

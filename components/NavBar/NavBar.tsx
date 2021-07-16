@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import HamburgerMenu from '@/components/HamburgerMenu/HamburgerMenu'
 import styles from './NavBar.module.scss'
 
 const NavBar: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header className={styles.header}>
-      <nav>
-        <a href="">Gary Xie</a>
-        <div>
+      <nav className={styles.nav}>
+        <a href="" className={styles.navLogo}>
+          Gary Xie
+        </a>
+
+        <div className={styles.navMenu}>
           <ul>
             <li>
               <a href="#">About</a>
@@ -28,13 +35,14 @@ const NavBar: React.FC = () => {
               <a href="#">Resume</a>
             </li>
           </ul>
-
-          <div>Close Menu Icon</div>
         </div>
 
-        <div>
+        <div className={styles.navBtns}>
           <div>Toggle Theme Button</div>
-          <div>Hamburger Menu</div>
+          <HamburgerMenu
+            open={menuOpen}
+            onClick={() => setMenuOpen((prev) => !prev)}
+          />
         </div>
       </nav>
     </header>

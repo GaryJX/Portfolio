@@ -12,6 +12,7 @@
   // --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --color-primary-darker: hsl(var(--hue-color), 57%, 53%);
   --color-primary-lighter: hsl(var(--hue-color), 92%, 85%);
+  // TODO: Consider renaming the CSS variables for the text colors, they aren't very clear or accurate
   --color-text-heading: hsl(var(--hue-color), 8%, 15%);
   --color-text-normal: hsl(var(--hue-color), 8%, 45%);
   --color-text-light: hsl(var(--hue-color), 8%, 65%);
@@ -54,4 +55,22 @@ body {
   font-family: var(--font-family-body);
   background-color: var(--color-background);
   color: var(--color-text-normal);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

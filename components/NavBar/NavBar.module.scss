@@ -1,2 +1,16 @@
+@use "../../styles/mixins";
+
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--color-background);
+
+  .nav {
+    @include mixins.container;
+    display: flex;
+    justify-content: space-between;
+  }
 }
