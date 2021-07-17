@@ -5,6 +5,8 @@
 /**************** CSS Variables ****************/
 :root {
   /*********** Colors ***********/
+  color-scheme: light;
+
   // Primary Color Hue
   --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
@@ -30,6 +32,8 @@
 
 /**************** Dark Theme ****************/
 body.dark-theme {
+  color-scheme: dark;
+
   // --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --color-text-heading: hsl(var(--hue-color), 8%, 95%);
   --color-text-normal: hsl(var(--hue-color), 8%, 75%);
