@@ -22,6 +22,8 @@
   --color-scroll-bar: hsl(var(--hue-color), 12%, 90%);
   --color-scroll-thumb: hsl(var(--hue-color), 12%, 80%);
 
+  --transition-color: 250ms linear;
+
   /*********** Fonts ***********/
   --font-family-body: 'Poppins', sans-serif;
 }
@@ -55,6 +57,8 @@ body {
   font-family: var(--font-family-body);
   background-color: var(--color-background);
   color: var(--color-text-normal);
+  transition: background-color var(--transition-color),
+    color var(--transition-color);
 }
 
 button {

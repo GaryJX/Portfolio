@@ -6,6 +6,7 @@
   svg {
     width: 25px;
     height: 25px;
+    transition: fill var(--transition-color);
     fill: var(--color-text-heading);
 
     .toggleSun {

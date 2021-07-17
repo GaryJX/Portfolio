@@ -14,6 +14,7 @@ $menuToggleTiming: 400ms ease-in-out forwards;
     height: 3px;
     border-radius: 6px;
     // transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
+    transition: background-color var(--transition-color);
   }
 
   &.open {
