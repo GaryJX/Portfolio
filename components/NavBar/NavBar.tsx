@@ -9,12 +9,12 @@ const NavBar: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
+      <div className={styles.navContainer}>
         <a href="" className={styles.navLogo}>
           Gary Xie
         </a>
 
-        <div className={styles.navMenu}>
+        <nav className={styles.navMenu}>
           <ul>
             <li>
               <a href="#">About</a>
@@ -36,7 +36,7 @@ const NavBar: React.FC = () => {
               <a href="#">Resume</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
         <div className={styles.navBtns}>
           <ThemeToggle />
@@ -45,7 +45,7 @@ const NavBar: React.FC = () => {
             onClick={() => setMenuOpen((prev) => !prev)}
           />
         </div>
-      </nav>
+      </div>
     </header>
   )
 }

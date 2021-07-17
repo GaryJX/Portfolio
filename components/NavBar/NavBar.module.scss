@@ -9,9 +9,20 @@
   background-color: var(--color-background);
   transition: background-color var(--transition-color);
 
-  .nav {
+  .navContainer {
     @include mixins.container;
     display: flex;
     justify-content: space-between;
+
+    .navMenu {
+      ul {
+        display: flex;
+      }
+    }
+
+    .navBtns {
+      display: flex;
+      align-items: center;
+    }
   }
 }
