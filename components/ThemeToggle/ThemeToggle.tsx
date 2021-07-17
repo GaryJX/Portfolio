@@ -1,7 +1,47 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import styles from './ThemeToggle.module.scss'
 
+const LOCAL_STORAGE_THEME_KEY = 'theme'
+
+// TODO: Move the theme logic into a ThemeProvider Context
 const ThemeToggle: React.FC = (props) => {
-  // const { open, onClick } = props
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Update theme based on local storage if present, else use user preferences
+      const localTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY)
+
+      if (localTheme) {
+        if (localTheme === 'light' || localTheme === 'dark') {
+          setTheme(localTheme)
+        } else {
+          localStorage.removeItem(LOCAL_STORAGE_THEME_KEY)
+        }
+      } else if (
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      ) {
+        setTheme('dark')
+      } else {
+        setTheme('light')
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    if (theme === 'light') {
+      document.querySelector('body')?.classList.remove('dark-theme')
+    } else {
+      document.querySelector('body')?.classList.add('dark-theme')
+    }
+  }, [theme])
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme)
+  }
 
   return (
     <button
@@ -25,17 +65,6 @@ const ThemeToggle: React.FC = (props) => {
         </g>
       </svg>
     </button>
-    // <div>TODO: Theme Toggle</div>
-    // <button
-    //   className={`${styles.hamburgerMenu} ${
-    //     open ? styles.open : styles.closed
-    //   }`}
-    //   onClick={onClick}
-    // >
-    //   <div className={styles.hamburgerLine} />
-    //   <div className={styles.hamburgerLine} />
-    //   <div className={styles.hamburgerLine} />
-    // </button>
   )
 }
 
