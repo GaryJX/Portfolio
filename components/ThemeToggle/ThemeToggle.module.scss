@@ -6,7 +6,7 @@
   svg {
     width: 25px;
     height: 25px;
-    transition: fill var(--chakra-transition-duration-normal);
+    fill: var(--color-text-heading);
 
     .toggleSun {
       transform-origin: center center;
@@ -20,8 +20,6 @@
 
   &.light {
     svg {
-      fill: var(--chakra-colors-gray-800);
-
       .toggleSun {
         transform: rotate(0.5turn);
       }
@@ -29,12 +27,6 @@
       .toggleCircle {
         transform: translateX(-15%);
       }
-    }
-  }
-
-  &.dark {
-    svg {
-      fill: var(--chakra-colors-white);
     }
   }
 }
