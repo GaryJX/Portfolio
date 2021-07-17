@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
           Gary Xie
         </a>
 
-        <nav className={styles.navMenu} role="navigation">
+        <nav className={styles.navMenu}>
           <ul>
             <li>
               <a href="#">About</a>
