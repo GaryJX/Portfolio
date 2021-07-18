@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
           Gary Xie
         </a>
 
-        <nav className={styles.navMenu}>
+        <nav className={`${styles.navMenu} ${menuOpen ? styles.open : ''}`}>
           <ul>
             <li>
               <a href="#">About</a>
