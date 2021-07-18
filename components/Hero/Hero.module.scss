@@ -28,23 +28,23 @@
 
     .watermark1 {
       background-color: green;
-      height: clamp(0px, 100%, 50rem);
+      height: clamp(0px, 85%, 42.5rem);
       right: 0;
-      transform: translateX(calc(30% + var(--body-horizontal-padding)));
+      transform: translateX(calc(10% + var(--body-horizontal-padding)));
     }
 
     .watermark2 {
       background-color: lightgreen;
-      height: clamp(0px, 62%, 31rem);
+      height: clamp(0px, 53%, 26.5rem);
       right: 0;
-      transform: translate(-35rem, -10rem);
+      transform: translate(-40rem, -10rem);
     }
 
     .watermark3 {
       background-color: greenyellow;
-      height: clamp(0px, 38%, 19rem);
+      height: clamp(0px, 33%, 16.5rem);
       right: 0;
-      transform: translate(-25rem, 20rem);
+      transform: translate(-29rem, 14rem);
     }
   }
 
