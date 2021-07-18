@@ -1,7 +1,9 @@
 export const Home: React.FC = () => {
   return (
     <main>
-      <section>{/* <Hero /> */}</section>
+      <section>
+        <div>Hi, my name is</div>
+      </section>
       <section></section>
     </main>
   )
