@@ -1,3 +1,5 @@
+@use "../../styles/mixins";
+
 .logoTitle {
   display: flex;
   align-items: center;
@@ -15,11 +17,28 @@
     margin-right: 0.5rem;
   }
 
+  .logoTitleSvg {
+    display: none;
+  }
+
   &:hover {
     .logoTitleCircle,
     .logoTitleSvg {
       fill: var(--color-primary);
       stroke: var(--color-primary);
+    }
+  }
+
+  @include mixins.min-mq(sm) {
+    .logoTitleSvg {
+      display: block;
+    }
+  }
+
+  @include mixins.max-mq(sm) {
+    .logoTitleSvg {
+      // display: block;
+      fill: red;
     }
   }
 }
