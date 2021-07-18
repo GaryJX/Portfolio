@@ -13,10 +13,11 @@
 
   --color-primary: hsl(var(--hue-color), 69%, 41%);
   // --first-color-second: hsl(var(--hue-color), 69%, 61%);
-  --color-primary-darker: hsl(var(--hue-color), 57%, 53%);
+  --color-primary-darker: hsl(var(--hue-color), 57%, 36%);
   --color-primary-lighter: hsl(var(--hue-color), 92%, 85%);
   // TODO: Consider renaming the CSS variables for the text colors, they aren't very clear or accurate
   --color-text-heading: hsl(var(--hue-color), 8%, 15%);
+  --color-text-subheading: hsl(var(--hue-color), 100%, 25%);
   --color-text-normal: hsl(var(--hue-color), 8%, 45%);
   --color-text-light: hsl(var(--hue-color), 8%, 65%);
   --color-input: hsl(var(--hue-color), 70%, 96%);
@@ -37,9 +38,11 @@
 body.dark-theme {
   color-scheme: dark;
 
-  --color-primary: hsl(var(--hue-color), 69%, 41%);
+  --color-primary: hsl(var(--hue-color), 69%, 31%);
+  --color-primary-darker: hsl(var(--hue-color), 57%, 26%);
   // --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --color-text-heading: hsl(var(--hue-color), 8%, 95%);
+  --color-text-subheading: hsl(var(--hue-color), 50%, 50%);
   --color-text-normal: hsl(var(--hue-color), 8%, 75%);
   --color-input: hsl(var(--hue-color), 29%, 16%);
   --color-background: hsl(var(--hue-color), 28%, 12%);

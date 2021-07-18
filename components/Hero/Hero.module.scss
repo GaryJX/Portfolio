@@ -10,7 +10,7 @@
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
-    color: var(--color-primary);
+    color: var(--color-text-subheading);
   }
 
   .title,
@@ -42,5 +42,9 @@
     border-radius: 4px;
     background-color: var(--color-primary);
     color: white;
+
+    &:hover {
+      background-color: var(--color-primary-darker);
+    }
   }
 }
