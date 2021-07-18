@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import SectionHeader from '@/components/SectionHeader/SectionHeader'
-import styles from './About.module.scss'
+import styles from './Contact.module.scss'
 
-const About: React.FC = () => {
+const Contact: React.FC = () => {
   return (
-    <div className={styles.about}>
-      <SectionHeader title="About Me" />
+    <div className={styles.contact}>
+      <SectionHeader title="Contact Me" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus
         ad minima corporis soluta vel similique rem enim tempora incidunt,
@@ -19,9 +19,8 @@ const About: React.FC = () => {
         officia laborum ad ratione numquam praesentium eos maxime! Inventore sit
         soluta saepe totam laudantium blanditiis quis.
       </p>
-      {/* // TODO: Maybe merge skills section into here as a second column, so that I have something to take up horizontal space in About for? (or take a photo of myself?)*/}
     </div>
   )
 }
 
-export default About
+export default Contact
