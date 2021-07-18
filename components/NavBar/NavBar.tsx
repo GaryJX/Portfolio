@@ -13,7 +13,11 @@ const NavBar: React.FC = () => {
       <div className={styles.navContainer}>
         <LogoTitle />
 
-        <nav className={`${styles.navMenu} ${menuOpen ? styles.open : ''}`}>
+        <nav
+          className={`${styles.navMenu} ${
+            menuOpen ? styles.open : styles.closed
+          }`}
+        >
           <ul>
             <li>
               <a href="#">About</a>

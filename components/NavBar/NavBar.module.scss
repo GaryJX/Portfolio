@@ -42,6 +42,23 @@
         transform: translateY(var(--header-height));
       }
 
+      &.closed {
+        // Prevent tab focus when menu is closed
+        ul li a {
+          animation: hide-visibility 400ms ease-in-out forwards;
+
+          @keyframes hide-visibility {
+            99% {
+              visibility: visible;
+            }
+
+            100% {
+              visibility: hidden;
+            }
+          }
+        }
+      }
+
       ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
