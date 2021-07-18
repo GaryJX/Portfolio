@@ -2,7 +2,7 @@ import Hero from '@/components/Hero/Hero'
 
 export const Home: React.FC = () => {
   return (
-    <main>
+    <main id="main">
       <section>
         <Hero />
       </section>

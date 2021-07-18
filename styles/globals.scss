@@ -29,6 +29,8 @@
   --color-watermark-1: hsl(var(--hue-color), 60%, 35%);
   --color-watermark-2: hsl(var(--hue-color), 60%, 45%);
   --color-watermark-3: hsl(var(--hue-color), 60%, 65%);
+  --color-selection-background: hsl(var(--hue-color), 30%, 30%);
+  --color-selection-text: hsl(var(--hue-color), 70%, 99%);
 
   // TODO: Maybe consider removing the transition color timing, it doesn't gel well
   --transition-color: 0 linear;
@@ -71,6 +73,8 @@ body.dark-theme {
   --color-watermark-1: hsl(var(--hue-color), 40%, 30%);
   --color-watermark-2: hsl(var(--hue-color), 40%, 40%);
   --color-watermark-3: hsl(var(--hue-color), 40%, 60%);
+  --color-selection-background: hsl(var(--hue-color), 30%, 90%);
+  --color-selection-text: hsl(var(--hue-color), 70%, 25%);
 }
 
 /**************** Base Styles ****************/
@@ -93,6 +97,11 @@ body {
   transition: background-color var(--transition-color),
     color var(--transition-color);
   overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-selection-background);
+  color: var(--color-selection-text);
 }
 
 button {

@@ -10,6 +10,9 @@ const NavBar: React.FC = () => {
 
   return (
     <header className={styles.header}>
+      <a className={styles.skipToContent} href="#main">
+        Skip to content
+      </a>
       <div className={styles.navContainer}>
         <LogoTitle />
 
