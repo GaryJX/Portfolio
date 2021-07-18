@@ -1,31 +1,51 @@
 import React from 'react'
 import styles from './LogoTitle.module.scss'
 
+// Circle SVG dimensions
+const RADIUS = 250
+const STROKE = 30
+const NORMALIZED_RADIUS = RADIUS - STROKE / 2
+const CIRCUMFERENCE = RADIUS * 2 * Math.PI
+
 const LogoTitle: React.FC = () => {
   return (
-    <a
-      className={styles.logoTitle}
-      href=""
-      // onClick={() => setLoading(true)}
-
-      // TODO: Handle Enter and Spacebar for accessibility
-      // tabIndex={0}
-    >
-      {/* <Logo /> */}
+    <a className={styles.logoTitle} href="">
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        width="901.000000pt"
-        height="224.000000pt"
+        viewBox="0 0 500 500"
+        preserveAspectRatio="xMidYMid meet"
+        className={styles.logoTitleCircle}
+      >
+        <circle
+          fill="transparent"
+          strokeWidth={STROKE}
+          strokeDasharray={`${CIRCUMFERENCE} ${CIRCUMFERENCE}`}
+          r={NORMALIZED_RADIUS}
+          cx={RADIUS}
+          cy={RADIUS}
+        />
+        <g transform="translate(0,500) scale(0.1,-0.1)">
+          <path
+            d="M2415 3464 c-158 -15 -367 -98 -477 -191 -214 -180 -338 -480 -338
+            -818 0 -349 125 -634 354 -806 121 -92 204 -128 351 -155 264 -47 510 15 706
+            177 32 27 60 45 62 41 3 -4 13 -41 22 -82 28 -117 20 -111 138 -108 l102 3 3
+            518 2 517 -420 0 -420 0 0 -140 0 -140 278 -2 277 -3 -4 -55 c-11 -168 -106
+            -314 -258 -392 -90 -47 -157 -62 -278 -62 -302 -1 -505 167 -582 482 -23 94
+            -23 341 1 437 70 288 250 466 499 494 276 31 483 -91 558 -329 l17 -55 148 -3
+            c81 -1 152 2 157 7 13 13 -36 188 -74 263 -126 250 -356 387 -674 401 -60 2
+            -128 3 -150 1z"
+          />
+        </g>
+      </svg>
+      <svg
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 901.000000 224.000000"
         preserveAspectRatio="xMidYMid meet"
         className={styles.logoTitleSvg}
       >
-        <g
-          transform="translate(0.000000,224.000000) scale(0.100000,-0.100000)"
-          // fill="#000000"
-          stroke="none"
-        >
+        <g transform="translate(0.000000,224.000000) scale(0.100000,-0.100000)">
           <path
             d="M460 2089 c-86 -11 -197 -66 -245 -122 -166 -192 -167 -528 -1 -705
               137 -147 381 -163 546 -38 l35 27 13 -45 13 -46 50 0 49 0 0 250 0 250 -200 0
