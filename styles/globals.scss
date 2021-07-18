@@ -11,7 +11,7 @@
   // Primary Color Hue
   --hue-color: 175; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-  --color-primary: hsl(var(--hue-color), 69%, 61%);
+  --color-primary: hsl(var(--hue-color), 69%, 41%);
   // --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --color-primary-darker: hsl(var(--hue-color), 57%, 53%);
   --color-primary-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -37,6 +37,7 @@
 body.dark-theme {
   color-scheme: dark;
 
+  --color-primary: hsl(var(--hue-color), 69%, 41%);
   // --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --color-text-heading: hsl(var(--hue-color), 8%, 95%);
   --color-text-normal: hsl(var(--hue-color), 8%, 75%);
