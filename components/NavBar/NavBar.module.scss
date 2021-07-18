@@ -13,18 +13,34 @@
     @include mixins.container;
     display: flex;
     justify-content: space-between;
+    --header-height: 57px;
 
-    .navMenu {
+    &::before {
+      content: '';
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
+      height: var(--header-height);
+      background-color: var(--color-background);
+      transition: background-color var(--transition-color);
       z-index: -1;
+    }
+
+    .navMenu {
+      // background-color: red;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -2;
       transition: transform 300ms linear;
-      transform: translateY(-100%);
+      transform: translateY(calc(-100% + var(--header-height)));
+      box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
 
       // TODO: Open Styling
-      transform: translateY(0);
+      // transform: translateY(57px);
 
       ul {
         display: grid;
