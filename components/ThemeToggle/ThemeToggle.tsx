@@ -5,6 +5,7 @@ const LOCAL_STORAGE_THEME_KEY = 'theme'
 
 // TODO: Move the theme logic into a ThemeProvider Context
 const ThemeToggle: React.FC = (props) => {
+  // TODO: Consider defaulting to dark mode, and prevent toggling to light mode (since I pref dark mode significantly more)
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   useLayoutEffect(() => {
