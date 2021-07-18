@@ -20,6 +20,12 @@
     }
   }
 
+  &:hover {
+    svg {
+      fill: var(--color-primary);
+    }
+  }
+
   &.light {
     svg {
       .toggleSun {

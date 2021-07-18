@@ -14,4 +14,12 @@
   .logoTitleCircle {
     margin-right: 0.5rem;
   }
+
+  &:hover {
+    .logoTitleCircle,
+    .logoTitleSvg {
+      fill: var(--color-primary);
+      stroke: var(--color-primary);
+    }
+  }
 }

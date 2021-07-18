@@ -24,7 +24,8 @@
   --color-scroll-bar: hsl(var(--hue-color), 12%, 90%);
   --color-scroll-thumb: hsl(var(--hue-color), 12%, 80%);
 
-  --transition-color: 250ms linear;
+  // TODO: Maybe consider removing the transition color timing, it doesn't gel well
+  --transition-color: 0 linear;
 
   /*********** Fonts ***********/
   --font-family-body: 'Poppins', sans-serif;
