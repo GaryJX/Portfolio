@@ -26,6 +26,9 @@
   --color-container: hsl(0, 0%, 100%);
   --color-scroll-bar: hsl(var(--hue-color), 12%, 90%);
   --color-scroll-thumb: hsl(var(--hue-color), 12%, 80%);
+  --color-watermark-1: hsl(var(--hue-color), 60%, 25%);
+  --color-watermark-2: hsl(var(--hue-color), 60%, 45%);
+  --color-watermark-3: hsl(var(--hue-color), 60%, 65%);
 
   // TODO: Maybe consider removing the transition color timing, it doesn't gel well
   --transition-color: 0 linear;
@@ -65,6 +68,9 @@ body.dark-theme {
   --color-container: hsl(var(--hue-color), 29%, 16%);
   --color-scroll-bar: hsl(var(--hue-color), 12%, 48%);
   --color-scroll-thumb: hsl(var(--hue-color), 12%, 36%);
+  --color-watermark-1: hsl(var(--hue-color), 40%, 20%);
+  --color-watermark-2: hsl(var(--hue-color), 40%, 40%);
+  --color-watermark-3: hsl(var(--hue-color), 40%, 60%);
 }
 
 /**************** Base Styles ****************/

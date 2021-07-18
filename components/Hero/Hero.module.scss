@@ -24,27 +24,28 @@
       height: auto;
       aspect-ratio: 1 / 1;
       border-radius: 50%;
+      opacity: 0.3;
     }
 
     .watermark1 {
-      background-color: green;
+      background-color: var(--color-watermark-1);
       height: clamp(0px, 85%, 42.5rem);
       right: 0;
-      transform: translateX(calc(10% + var(--body-horizontal-padding)));
+      transform: translate(calc(5% + var(--body-horizontal-padding)), -2rem);
     }
 
     .watermark2 {
-      background-color: lightgreen;
+      background-color: var(--color-watermark-2);
       height: clamp(0px, 53%, 26.5rem);
       right: 0;
-      transform: translate(-40rem, -10rem);
+      transform: translate(-40rem, -8rem);
     }
 
     .watermark3 {
-      background-color: greenyellow;
+      background-color: var(--color-watermark-3);
       height: clamp(0px, 33%, 16.5rem);
       right: 0;
-      transform: translate(-29rem, 14rem);
+      transform: translate(-30rem, 16rem);
     }
   }
 
