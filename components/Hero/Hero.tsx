@@ -4,6 +4,7 @@ import styles from './Hero.module.scss'
 const Hero: React.FC = () => {
   return (
     <div className={styles.hero}>
+      <div className={styles.watermark} />
       <h3 className={styles.titleSubHeader}>Hi, my name is</h3>
       <h2 className={styles.title}>Gary Xie.</h2>
       <h1 className={styles.subtitle}>I develop things for the web.</h1>
