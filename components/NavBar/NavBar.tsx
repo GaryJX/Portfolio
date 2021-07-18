@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import HamburgerMenu from '@/components/HamburgerMenu/HamburgerMenu'
+import LogoTitle from '@/components/LogoTitle/LogoTitle'
 import ThemeToggle from '@/components/ThemeToggle/ThemeToggle'
 import styles from './NavBar.module.scss'
 
@@ -10,9 +11,7 @@ const NavBar: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.navContainer}>
-        <a href="" className={styles.navLogo}>
-          Gary Xie
-        </a>
+        <LogoTitle />
 
         <nav className={`${styles.navMenu} ${menuOpen ? styles.open : ''}`}>
           <ul>

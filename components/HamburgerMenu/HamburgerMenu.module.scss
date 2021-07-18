@@ -6,7 +6,8 @@ $menuToggleTiming: 400ms ease-in-out forwards;
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-  padding: 19px 1rem;
+  padding: calc(0.75rem + 3px) 0.75rem;
+  margin: 0.25rem;
 
   .hamburgerLine {
     background-color: var(--color-text-heading);

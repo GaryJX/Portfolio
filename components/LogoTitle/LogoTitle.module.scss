@@ -1,0 +1,11 @@
+.logoTitle {
+  display: flex;
+  align-items: center;
+
+  .logoTitleSvg {
+    height: 40px;
+    width: auto;
+    fill: var(--color-text-heading);
+    transition: fill var(--transition-color);
+  }
+}
