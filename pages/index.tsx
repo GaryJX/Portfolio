@@ -1,8 +1,10 @@
+import Hero from '@/components/Hero/Hero'
+
 export const Home: React.FC = () => {
   return (
     <main>
       <section>
-        <div>Hi, my name is</div>
+        <Hero />
       </section>
       <section></section>
     </main>
