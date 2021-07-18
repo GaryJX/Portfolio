@@ -86,6 +86,7 @@ body {
   color: var(--color-text-normal);
   transition: background-color var(--transition-color),
     color var(--transition-color);
+  overflow-x: hidden;
 }
 
 button {

@@ -37,7 +37,7 @@ $maxBreakpoints: (
 }
 
 @mixin container {
-  max-width: 110rem; // TODO: Maybe change the max-width?
+  max-width: 75rem; // TODO: Maybe change the max-width?
   width: 100%;
   margin: 0 auto;
 }
