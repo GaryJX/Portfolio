@@ -12,22 +12,23 @@
   --header-height: 65px;
 
   .skipToContent {
+    --skip-to-content-offset: 5px;
     position: absolute;
+    top: var(--skip-to-content-offset);
     left: 0;
     display: flex;
     align-items: center;
-    height: var(--header-height);
+    height: calc(var(--header-height) - var(--skip-to-content-offset) * 2);
     padding: 0 2rem;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-darker);
     color: white;
     font-weight: 500;
     transform: translateX(-100%);
     transition: transform 200ms ease-in-out;
     border-radius: 4px;
 
-    &:focus {
-      transform: translateX(0);
-      outline: none;
+    &:focus-visible {
+      transform: translateX(var(--skip-to-content-offset));
     }
   }
 
@@ -43,7 +44,8 @@
         padding: 0.5rem;
         color: var(--color-text-heading);
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
           color: var(--color-primary);
         }
       }

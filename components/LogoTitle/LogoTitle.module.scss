@@ -3,6 +3,7 @@
 .logoTitle {
   display: flex;
   align-items: center;
+  margin: 10px 0;
 
   .logoTitleCircle,
   .logoTitleSvg {
@@ -21,7 +22,8 @@
     display: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     .logoTitleCircle,
     .logoTitleSvg {
       fill: var(--color-primary);

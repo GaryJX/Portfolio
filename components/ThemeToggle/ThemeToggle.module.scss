@@ -20,7 +20,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     svg {
       fill: var(--color-primary);
     }

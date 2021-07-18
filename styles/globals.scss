@@ -84,6 +84,11 @@ body.dark-theme {
   margin: 0;
 }
 
+*:focus-visible {
+  outline: var(--color-primary) dashed 2px;
+  outline-offset: 3px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -99,9 +104,12 @@ body {
   overflow-x: hidden;
 }
 
-::selection {
-  background-color: var(--color-selection-background);
-  color: var(--color-selection-text);
+main {
+  padding: 0 var(--body-horizontal-padding);
+
+  section {
+    @include mixins.container;
+  }
 }
 
 button {
@@ -122,10 +130,7 @@ img {
   height: auto;
 }
 
-main {
-  padding: 0 var(--body-horizontal-padding);
-
-  section {
-    @include mixins.container;
-  }
+::selection {
+  background-color: var(--color-selection-background);
+  color: var(--color-selection-text);
 }

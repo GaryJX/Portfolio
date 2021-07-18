@@ -22,7 +22,8 @@ $menuToggleTiming: 400ms ease-in-out forwards;
     transition: background-color var(--transition-color);
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     .hamburgerLine {
       background-color: var(--color-primary);
     }

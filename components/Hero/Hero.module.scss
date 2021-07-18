@@ -108,7 +108,8 @@
     color: white;
     font-weight: 500;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background-color: var(--color-primary-darker);
     }
   }
