@@ -34,11 +34,4 @@
       display: block;
     }
   }
-
-  @include mixins.max-mq(sm) {
-    .logoTitleSvg {
-      // display: block;
-      fill: red;
-    }
-  }
 }
