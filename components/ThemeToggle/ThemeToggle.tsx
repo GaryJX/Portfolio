@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useLayoutEffect, useState } from 'react'
 import styles from './ThemeToggle.module.scss'
 
 const LOCAL_STORAGE_THEME_KEY = 'theme'
@@ -7,7 +7,7 @@ const LOCAL_STORAGE_THEME_KEY = 'theme'
 const ThemeToggle: React.FC = (props) => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (typeof window !== 'undefined') {
       // Update theme based on local storage if present, else use user preferences
       const localTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY)
