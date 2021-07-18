@@ -32,6 +32,21 @@
 
   /*********** Fonts ***********/
   --font-family-body: 'Poppins', sans-serif;
+
+  /*********** Padding ***********/
+  --body-horizontal-padding: 1.5rem;
+
+  @include mixins.min-mq(md) {
+    --body-horizontal-padding: 3rem;
+  }
+
+  @include mixins.min-mq(lg) {
+    --body-horizontal-padding: 6rem;
+  }
+
+  @include mixins.min-mq(xl) {
+    --body-horizontal-padding: 10rem;
+  }
 }
 
 /**************** Dark Theme ****************/
@@ -92,7 +107,7 @@ img {
 }
 
 main {
-  padding: 0 1.5rem;
+  padding: 0 var(--body-horizontal-padding);
 
   section {
     @include mixins.container;

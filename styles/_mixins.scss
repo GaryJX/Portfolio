@@ -36,14 +36,8 @@ $maxBreakpoints: (
   }
 }
 
-@mixin section-max-width {
-  max-width: var(--section-max-width);
-  width: 100%;
-  margin: 0 auto;
-}
-
 @mixin container {
-  max-width: 1000px; // TODO: Maybe change the max-width?
+  max-width: 110rem; // TODO: Maybe change the max-width?
   width: 100%;
   margin: 0 auto;
 }

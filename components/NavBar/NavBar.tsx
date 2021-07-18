@@ -20,6 +20,9 @@ const NavBar: React.FC = () => {
         >
           <ul>
             <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
               <a href="#">About</a>
             </li>
             <li>
@@ -34,10 +37,10 @@ const NavBar: React.FC = () => {
             <li>
               <a href="#">Contact</a>
             </li>
-            <li>
-              {/* // TODO: Not sure if I should put Resume here? */}
+            {/* // TODO: Not sure if I should put Resume here? */}
+            {/* <li>
               <a href="#">Resume</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
