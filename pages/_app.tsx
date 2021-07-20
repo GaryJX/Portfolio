@@ -13,6 +13,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         {/* <link rel="icon" href="/logo.svg" /> */}
         {[400, 500, 600, 700].map((weight) => (
           <link
+            key={weight}
             rel="preload"
             href={`/fonts/poppins-${weight}.woff2`}
             as="font"
