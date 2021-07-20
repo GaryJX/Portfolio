@@ -11,6 +11,15 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Head>
         <title>Gary Xie | Software Developer</title>
         <link rel="icon" href="/logo.svg" />
+        {[400, 500, 600, 700].map((weight) => (
+          <link
+            rel="preload"
+            href={`/fonts/poppins-${weight}.woff2`}
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+        ))}
         <meta
           name="viewport"
           content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no"

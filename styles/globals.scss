@@ -1,7 +1,39 @@
 @use 'mixins';
 
-// TODO: Remove the weights I am not using eventually
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+/**************** Fonts ****************/
+/* poppins-400 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url('/fonts/poppins-400.woff2') format('woff2');
+}
+/* poppins-500 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: optional;
+  src: url('/fonts/poppins-500.woff2') format('woff2');
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: optional;
+  src: url('/fonts/poppins-600.woff2') format('woff2');
+}
+// TODO: Remove the Poppins 700 weight if I don't need it anywhere in my application
+/* poppins-700 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url('/fonts/poppins-700.woff2') format('woff2');
+}
 
 /**************** CSS Variables ****************/
 :root {
@@ -36,7 +68,8 @@
   --transition-color: 0 linear;
 
   /*********** Fonts ***********/
-  --font-family-body: 'Poppins', sans-serif;
+  --font-family-body: 'Poppins', 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
 
   /*********** Padding ***********/
   --body-horizontal-padding: 1.5rem;
