@@ -10,7 +10,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>Gary Xie | Software Developer</title>
-        <link rel="icon" href="/logo.svg" />
+        {/* <link rel="icon" href="/logo.svg" /> */}
         {[400, 500, 600, 700].map((weight) => (
           <link
             rel="preload"

@@ -48,7 +48,7 @@ const NavBar: React.FC = () => {
         </nav>
 
         <div className={styles.navBtns}>
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <HamburgerMenu
             open={menuOpen}
             onClick={() => setMenuOpen((prev) => !prev)}
