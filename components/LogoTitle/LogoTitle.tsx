@@ -9,7 +9,7 @@ const CIRCUMFERENCE = RADIUS * 2 * Math.PI
 
 const LogoTitle: React.FC = () => {
   return (
-    <a className={styles.logoTitle} href="" aria-label="Home">
+    <a className={styles.logoTitle} href="/" aria-label="Home">
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"

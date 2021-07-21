@@ -7,6 +7,18 @@ class MyDocument extends Document {
         <Head>
           <title>Gary Xie | Software Developer</title>
           {/* <link rel="icon" href="/logo.svg" /> */}
+
+          <meta
+            name="viewport"
+            content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
+          />
+          {/* // TODO: Improve my meta description content (e.g. maybe match whatever I come up with for my Hero section) */}
+          <meta
+            name="description"
+            content="Gary Xie is a software developer and student at University of Toronto."
+          />
+          {/* // TODO: Add meta tags for better SEO, and maybe PWA eventually? */}
+          {/* // TODO: Add Google Analytics for my production site to see how many users visit, and from what devices? */}
           {[400, 500, 600, 700].map((weight) => (
             <link
               key={weight}
@@ -17,12 +29,6 @@ class MyDocument extends Document {
               crossOrigin="anonymous"
             />
           ))}
-          <meta
-            name="viewport"
-            content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover, shrink-to-fit=no"
-          />
-          {/* // TODO: Add meta tags for better SEO, and maybe PWA eventually? */}
-          {/* // TODO: Add Google Analytics for my production site to see how many users visit, and from what devices? */}
         </Head>
         <body>
           <Main />
