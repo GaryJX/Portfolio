@@ -22,6 +22,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = (props) => {
 
   return (
     <button
+      aria-label="Toggle menu"
       className={`${styles.hamburgerMenu} ${getMenuToggleClass()}`}
       onClick={() => {
         setClickedOnce(true)
