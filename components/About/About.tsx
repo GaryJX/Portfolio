@@ -29,7 +29,15 @@ const About: React.FC = () => {
           </p>
         </div>
         <div className={styles.skills}>
-          Here are a few technologies I've been
+          Here are a few technologies I've been working with recently:
+          <ul>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Golang</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+          </ul>
           {/* // TODO: Maybe merge skills section into here as a second column, so that I have something to take up horizontal space in About for? (or take a photo of myself?)*/}
         </div>
       </div>

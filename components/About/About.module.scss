@@ -1,12 +1,17 @@
+@use '../../styles/mixins';
+
 .about {
   // TODO: Move this to a mixin so I don't have to copy paste it to every section CSS file
   padding: 65px 0;
 
   .container {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    gap: 2rem;
+    column-gap: 2rem;
+
+    @include mixins.min-mq(sm) {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
 
     .aboutText {
       & > * {
@@ -14,6 +19,7 @@
       }
 
       a {
+        // TODO: Create a CSS Variable for this color
         color: hsl(var(--hue-color), 70%, 50%);
         position: relative;
         outline: none;
@@ -35,6 +41,22 @@
         &:focus-visible {
           &::after {
             transform: scaleX(1);
+          }
+        }
+      }
+    }
+
+    .skills {
+      ul {
+        max-width: 20rem;
+        margin-top: 1rem;
+        columns: 2;
+
+        li {
+          &::before {
+            content: '▹';
+            color: hsl(var(--hue-color), 70%, 50%);
+            padding-right: 0.5em;
           }
         }
       }
