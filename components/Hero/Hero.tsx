@@ -14,11 +14,9 @@ const Hero: React.FC = () => {
       <h2 className={styles.title}>Gary Xie.</h2>
       <h1 className={styles.subtitle}>I develop things for the web.</h1>
       <p className={styles.copyText}>
-        {/* // TODO: Write copy text */}
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem enim
-        fuga facere, earum distinctio iusto excepturi doloremque sit impedit
-        amet? At illo, eaque voluptatum eligendi saepe quaerat vel dicta.
-        Impedit.
+        I’m a software developer specializing in building extraordinary
+        experiences for the web. I am currently in my 3rd year of undergraduate
+        Computer Science studies at University of Toronto.
       </p>
       <div className={styles.callToActionContainer}>
         <button className={styles.callToAction}>View Projects</button>

@@ -28,9 +28,9 @@ const NavBar: React.FC = () => {
             <li>
               <a href="#about">About</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#skills">Skills</a>
-            </li>
+            </li> */}
             <li>
               <a href="#experience">Experience</a>
             </li>
@@ -40,10 +40,11 @@ const NavBar: React.FC = () => {
             <li>
               <a href="#contact">Contact</a>
             </li>
-            {/* // TODO: Not sure if I should put Resume here? */}
-            {/* <li>
-              <a href="#">Resume</a>
-            </li> */}
+            <li>
+              <a href="/resume.pdf" target="_blank">
+                Resume
+              </a>
+            </li>
           </ul>
         </nav>
 

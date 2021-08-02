@@ -95,7 +95,7 @@
 
   .copyText {
     margin-top: 0.75rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     max-width: 35rem;
   }
 
@@ -104,7 +104,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 2.5rem;
-    gap: 2rem;
+    gap: 1.5rem;
 
     @include mixins.min-mq(sm) {
       flex-direction: row;
