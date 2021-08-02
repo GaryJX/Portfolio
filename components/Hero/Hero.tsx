@@ -20,7 +20,12 @@ const Hero: React.FC = () => {
         amet? At illo, eaque voluptatum eligendi saepe quaerat vel dicta.
         Impedit.
       </p>
-      <button className={styles.callToAction}>View Projects</button>
+      <div className={styles.callToActionContainer}>
+        <button className={styles.callToAction}>View Projects</button>
+        <a href="/resume.pdf" target="_blank" className={styles.resumeBtn}>
+          Resume
+        </a>
+      </div>
     </div>
   )
 }

@@ -99,18 +99,44 @@
     max-width: 35rem;
   }
 
-  .callToAction {
-    width: max-content;
+  .callToActionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 2.5rem;
-    padding: 1rem 2rem;
-    border-radius: 4px;
-    background-color: var(--color-primary-button);
-    color: white;
-    font-weight: 500;
+    gap: 2rem;
 
-    &:hover,
-    &:focus-visible {
-      background-color: var(--color-primary-darker);
+    @include mixins.min-mq(sm) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .callToAction,
+    .resumeBtn {
+      width: max-content;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      font-weight: 500;
+      color: white;
+    }
+
+    .callToAction {
+      background-color: var(--color-primary-button);
+
+      &:hover,
+      &:focus-visible {
+        background-color: var(--color-primary-darker);
+      }
+    }
+
+    .resumeBtn {
+      border: solid 1px var(--color-primary-button);
+      background-color: hsla(var(--hue-color), 28%, 17%, 0.5);
+
+      &:hover,
+      &:focus-visible {
+        background-color: hsla(var(--hue-color), 28%, 17%, 0.8);
+      }
     }
   }
 }
