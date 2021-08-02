@@ -8,15 +8,28 @@ const About: React.FC = () => {
       <SectionHeader title="About Me" />
       <div className={styles.container}>
         <div className={styles.aboutText}>
+          <p>Hello, my name is Gary!</p>
           <p>
-            Hello! My name is Gary, and I’m a software developer specializing in
-            building extraordinary experiences for the web. Currently, I am a
-            3rd year Computer Science undergraduate student at University of
-            Toronto,
+            I'm a software developer based in Toronto, Canada, and I am
+            currently in my 3rd year of studying Computer Science at University
+            of Toronto.
+          </p>
+          <p>
+            I've been lucky enough to experience a variety of software
+            development internships during my undergraduate studies. I have
+            previously interned at{' '}
+            <a href="https://verto.health/" target="_blank">
+              Verto
+            </a>
+            , and I am currently finishing up a 16-month internship at{' '}
+            <a href="https://www.ibm.com/" target="_blank">
+              IBM
+            </a>
+            .
           </p>
         </div>
         <div className={styles.skills}>
-          Skills
+          Here are a few technologies I've been
           {/* // TODO: Maybe merge skills section into here as a second column, so that I have something to take up horizontal space in About for? (or take a photo of myself?)*/}
         </div>
       </div>

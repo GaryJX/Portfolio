@@ -14,9 +14,9 @@ export const Home: React.FC = () => {
         <About />
       </section>
       {/* <section id="skills"></section> */}
-      <section id="experience">
+      {/* <section id="experience">
         <WorkExperience />
-      </section>
+      </section> */}
       <section id="projects">
         <Projects />
       </section>

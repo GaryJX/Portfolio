@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       <h2 className={styles.title}>Gary Xie.</h2>
       <h1 className={styles.subtitle}>I develop things for the web.</h1>
       <p className={styles.copyText}>
-        I’m a software developer specializing in building extraordinary
+        I'm a software developer specializing in building extraordinary
         experiences for the web. I am currently in my 3rd year of undergraduate
         Computer Science studies at University of Toronto.
       </p>
