@@ -41,7 +41,7 @@ const NavBar: React.FC = () => {
               <a href="#contact">Contact</a>
             </li>
             <li>
-              <a href="/resume.pdf" target="_blank">
+              <a href="/resume.pdf" target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>

@@ -10,26 +10,26 @@ const About: React.FC = () => {
         <div className={styles.aboutText}>
           <p>Hello, my name is Gary!</p>
           <p>
-            I'm a software developer based in Toronto, Canada, and I am
+            I’m a software developer based in Toronto, Canada, and I am
             currently in my 3rd year of studying Computer Science at University
             of Toronto.
           </p>
           <p>
-            I've been lucky enough to experience a variety of software
+            I’ve been lucky enough to experience a variety of software
             development internships during my undergraduate studies. I have
             previously interned at{' '}
-            <a href="https://verto.health/" target="_blank">
+            <a href="https://verto.health/" target="_blank" rel="noreferrer">
               Verto
             </a>
             , and I am currently finishing up a 16-month internship at{' '}
-            <a href="https://www.ibm.com/" target="_blank">
+            <a href="https://www.ibm.com/" target="_blank" rel="noreferrer">
               IBM
             </a>
             .
           </p>
         </div>
         <div className={styles.skills}>
-          Here are a few technologies I've been working with recently:
+          Here are a few technologies I’ve been working with recently:
           <ul>
             <li>TypeScript</li>
             <li>React</li>

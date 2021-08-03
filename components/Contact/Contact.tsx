@@ -9,15 +9,23 @@ const Contact: React.FC = () => {
     <div className={styles.contact}>
       <SectionHeader title="Contact Me" />
       <div className={styles.container}>
-        <a href="https://github.com/GaryJX" target="_blank">
+        <a href="https://github.com/GaryJX" target="_blank" rel="noreferrer">
           <FaGithub />
           GaryJX
         </a>
-        <a href="https://www.linkedin.com/in/GaryJX" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/GaryJX"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaLinkedin />
           GaryJX
         </a>
-        <a href="mailto:gary.xie@mail.utoronto.ca" target="_blank">
+        <a
+          href="mailto:gary.xie@mail.utoronto.ca"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaEnvelope />
           gary.xie@mail.utoronto.ca
         </a>

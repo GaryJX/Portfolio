@@ -14,13 +14,18 @@ const Hero: React.FC = () => {
       <h2 className={styles.title}>Gary Xie.</h2>
       <h1 className={styles.subtitle}>I develop things for the web.</h1>
       <p className={styles.copyText}>
-        I'm a software developer specializing in building extraordinary
+        I’m a software developer specializing in building extraordinary
         experiences for the web. I am currently in my 3rd year of undergraduate
         Computer Science studies at University of Toronto.
       </p>
       <div className={styles.callToActionContainer}>
         <button className={styles.callToAction}>View Projects</button>
-        <a href="/resume.pdf" target="_blank" className={styles.resumeBtn}>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.resumeBtn}
+        >
           Resume
         </a>
       </div>
