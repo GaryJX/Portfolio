@@ -9,7 +9,7 @@ class MyDocument extends Document {
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
           />
-          <script async src="../lib/gtag.js" />
+          <script async src="gtag.js" />
           {/* // TODO: Improve my meta description content (e.g. maybe match whatever I come up with for my Hero section) */}
           <meta
             name="description"
