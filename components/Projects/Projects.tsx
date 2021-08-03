@@ -11,6 +11,7 @@ const projects = [
     demo: 'https://<todo>.vercel.app',
     screenshot: '/todo/path/to/image',
   },
+  {},
 ]
 
 const Projects: React.FC = () => {
