@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, MouseEvent } from 'react'
 import { Fade } from 'react-awesome-reveal'
 import { useMediaQuery } from 'react-responsive'
 import HamburgerMenu from '@/components/HamburgerMenu/HamburgerMenu'
@@ -12,7 +12,12 @@ const NavBar: React.FC = () => {
     query: '(min-width: 48em)',
   })
 
-  console.log({ isLargeNavSize })
+  const handleClickNav = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+    const href = (event.target as HTMLAnchorElement).getAttribute('href')!
+    document.querySelector(href)?.scrollIntoView()
+    setMenuOpen(false)
+  }
 
   return (
     <header className={styles.header}>
@@ -36,12 +41,17 @@ const NavBar: React.FC = () => {
             duration={isLargeNavSize ? 500 : 0}
             delay={isLargeNavSize ? 300 : 0}
           >
+            {/* // TODO: Change hrefs to JS clicks instead (so that if a user refreshes page, it won't auto-scroll) */}
             <ul>
               <li>
-                <a href="#home">Home</a>
+                <a href="#home" onClick={handleClickNav}>
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about" onClick={handleClickNav}>
+                  About
+                </a>
               </li>
               {/* <li>
               <a href="#skills">Skills</a>
@@ -50,10 +60,14 @@ const NavBar: React.FC = () => {
               <a href="#experience">Experience</a>
             </li> */}
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" onClick={handleClickNav}>
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" onClick={handleClickNav}>
+                  Contact
+                </a>
               </li>
               <li>
                 <a href="/resume.pdf" target="_blank" rel="noreferrer">
