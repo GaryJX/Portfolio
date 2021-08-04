@@ -1,8 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, MouseEvent } from 'react'
 import { Fade } from 'react-awesome-reveal'
+import { useMediaQuery } from 'react-responsive'
 import styles from './Hero.module.scss'
 
 const Hero: React.FC = () => {
+  const isLargeNavSize = useMediaQuery({
+    query: '(min-width: 48em)',
+  })
+
+  const handleClickNav = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+    const href = (event.target as HTMLAnchorElement).getAttribute('href')!
+    document.querySelector(href)?.scrollIntoView()
+  }
+
   return (
     <div className={styles.hero}>
       {/* // TODO: Move this to a Watermark component */}
@@ -17,7 +28,7 @@ const Hero: React.FC = () => {
         direction="up"
         damping={0.5}
         duration={500}
-        delay={800}
+        delay={isLargeNavSize ? 800 : 200}
       >
         <h3 className={styles.titleSubHeader}>Hi, my name is</h3>
         <h2 className={styles.title}>Gary Xie.</h2>
@@ -28,7 +39,11 @@ const Hero: React.FC = () => {
           undergraduate Computer Science studies at University of Toronto.
         </p>
         <div className={styles.callToActionContainer}>
-          <a href="#projects" className={styles.callToAction}>
+          <a
+            href="#projects"
+            className={styles.callToAction}
+            onClick={handleClickNav}
+          >
             View Projects
           </a>
           <a
