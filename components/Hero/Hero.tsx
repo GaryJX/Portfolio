@@ -46,14 +46,14 @@ const Hero: React.FC = () => {
           >
             View Projects
           </a>
-          <a
+          {/* <a
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
             className={styles.resumeBtn}
           >
             Resume
-          </a>
+          </a> */}
         </div>
       </Fade>
     </div>
