@@ -8,9 +8,9 @@ type SectionHeaderProps = {
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({ title }) => {
   return (
-    <Fade triggerOnce direction="up" duration={500}>
-      <div className={styles.sectionHeader}>{title}</div>
-    </Fade>
+    // <Fade triggerOnce direction="up" duration={500}>
+    <div className={styles.sectionHeader}>{title}</div>
+    // </Fade>
   )
 }
 
