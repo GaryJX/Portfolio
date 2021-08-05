@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import SectionHeader from '@/components/SectionHeader/SectionHeader'
+import Project, { ProjectProps } from '@/components/Project/Project'
 import styles from './Projects.module.scss'
 
-const projects = [
+const projects: ProjectProps[] = [
   {
     title: 'Find My IP',
     description: 'TODO: description',
@@ -26,6 +27,9 @@ const Projects: React.FC = () => {
     <div className={styles.projects}>
       <SectionHeader title="Projects" />
       <p>Coming soon...</p>
+      {projects.map((props) => (
+        <Project {...props} />
+      ))}
     </div>
   )
 }
