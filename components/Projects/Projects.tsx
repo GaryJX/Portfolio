@@ -11,7 +11,14 @@ const projects = [
     demo: 'https://<todo>.vercel.app',
     screenshot: '/todo/path/to/image',
   },
-  {},
+  {
+    title: 'Video Chat App',
+    description: 'TODO: description',
+    technologies: ['Next.js', 'React'],
+    github: 'https://github.com/GaryJX/<todo>',
+    demo: 'https://<todo>.vercel.app',
+    screenshot: '/todo/path/to/image',
+  },
 ]
 
 const Projects: React.FC = () => {
