@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SectionHeader from '@/components/SectionHeader/SectionHeader'
 import Project, { ProjectProps } from '@/components/Project/Project'
 import styles from './Projects.module.scss'
+import { Fade } from 'react-awesome-reveal'
 
 const projects: ProjectProps[] = [
   {
@@ -25,11 +26,13 @@ const projects: ProjectProps[] = [
 const Projects: React.FC = () => {
   return (
     <div className={styles.projects}>
-      <SectionHeader title="Projects" />
-      <p>Coming soon...</p>
-      {projects.map((props) => (
-        <Project {...props} />
-      ))}
+      <Fade triggerOnce direction="up">
+        <SectionHeader title="Projects" />
+        <p>Coming soon...</p>
+        {projects.map((props) => (
+          <Project {...props} />
+        ))}
+      </Fade>
     </div>
   )
 }
