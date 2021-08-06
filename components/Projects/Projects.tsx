@@ -6,14 +6,14 @@ import { Fade } from 'react-awesome-reveal'
 
 const projects: ProjectProps[] = [
   // {},
-  {
-    title: 'Video Chat App',
-    description: 'TODO: description',
-    technologies: ['Next.js', 'React'],
-    github: 'https://github.com/GaryJX/<todo>',
-    demo: 'https://<todo>.vercel.app',
-    screenshotSrc: '/todo/path/to/image',
-  },
+  // {
+  //   title: 'Video Chat App',
+  //   description: 'TODO: description',
+  //   technologies: ['Next.js', 'React'],
+  //   github: 'https://github.com/GaryJX/<todo>',
+  //   demo: 'https://<todo>.vercel.app',
+  //   screenshotSrc: '/todo/path/to/image',
+  // },
   {
     title: 'Find My IP',
     description: 'TODO: description',

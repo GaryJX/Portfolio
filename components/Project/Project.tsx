@@ -19,6 +19,16 @@ const Project: React.FC<ProjectProps> = (props) => {
     <div className={styles.project}>
       <div className={styles.projectContent}>
         <h3>{title}</h3>
+        <div>{description}</div>
+        <ul>
+          {technologies.map((tech) => (
+            <li>{tech}</li>
+          ))}
+        </ul>
+        <div className={styles.links}>
+          <div>TODO: Github</div>
+          <div>TODO: Demo</div>
+        </div>
       </div>
       <div className={styles.projectImage}>
         <Image
