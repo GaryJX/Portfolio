@@ -1,2 +1,22 @@
 .project {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  .projectContent {
+    grid-column: 5 / -1;
+  }
+
+  .projectImage {
+    grid-column: 1 / 8;
+
+    & > div {
+      position: static !important;
+
+      & > img {
+        position: static !important;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
 }

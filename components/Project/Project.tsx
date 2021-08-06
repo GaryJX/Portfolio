@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import styles from './Project.module.scss'
 
 export type ProjectProps = {
@@ -7,15 +8,26 @@ export type ProjectProps = {
   technologies: string[]
   github: string
   demo: string
-  screenshot: string
+  screenshotSrc: string
 }
 
 const Project: React.FC<ProjectProps> = (props) => {
-  const { title, description, technologies, github, demo, screenshot } = props
+  const { title, description, technologies, github, demo, screenshotSrc } =
+    props
   // TODO: Display projects
   return (
     <div className={styles.project}>
-      <h3>{title}</h3>
+      <div className={styles.projectContent}>
+        <h3>{title}</h3>
+      </div>
+      <div className={styles.projectImage}>
+        <Image
+          src={screenshotSrc}
+          alt="Find My IP Project"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
     </div>
   )
 }

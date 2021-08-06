@@ -12,7 +12,7 @@ const projects: ProjectProps[] = [
     technologies: ['Next.js', 'React'],
     github: 'https://github.com/GaryJX/<todo>',
     demo: 'https://<todo>.vercel.app',
-    screenshot: '/todo/path/to/image',
+    screenshotSrc: '/todo/path/to/image',
   },
   {
     title: 'Find My IP',
@@ -20,7 +20,7 @@ const projects: ProjectProps[] = [
     technologies: ['Next.js', 'React'],
     github: 'https://github.com/GaryJX/find-my-ip',
     demo: 'https://garyjx-find-my-ip.vercel.app/',
-    screenshot: '/projects/find-my-ip.jpg',
+    screenshotSrc: '/projects/find-my-ip.jpg',
   },
 ]
 
