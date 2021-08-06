@@ -3,6 +3,10 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Layout from '@/components/Layout/Layout'
 import '@/styles/globals.scss'
+import ReactGA from 'react-ga'
+
+const TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!
+ReactGA.initialize(TRACKING_ID)
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
