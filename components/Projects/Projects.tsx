@@ -5,6 +5,7 @@ import styles from './Projects.module.scss'
 import { Fade } from 'react-awesome-reveal'
 
 const projects: ProjectProps[] = [
+  // {},
   {
     title: 'Video Chat App',
     description: 'TODO: description',
