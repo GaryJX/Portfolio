@@ -10,13 +10,6 @@ const About: React.FC = () => {
         <SectionHeader title="About Me" />
         <div className={styles.container}>
           <div className={styles.aboutText}>
-            {/* <Fade
-              triggerOnce
-              cascade
-              direction="up"
-              damping={0.5}
-              duration={500}
-            > */}
             <p>Hello, my name is Gary!</p>
             <p>
               I’m a software developer based in Toronto, Canada, and I am
@@ -36,19 +29,10 @@ const About: React.FC = () => {
               </a>
               .
             </p>
-            {/* </Fade> */}
           </div>
           <div className={styles.skills}>
-            {/* <Fade triggerOnce direction="up" duration={500} delay={1000}> */}
             <p>Here are a few technologies I’ve been working with recently:</p>
-            {/* </Fade> */}
-            {/* <Fade
-              triggerOnce
-              cascade
-              direction="up"
-              duration={500}
-              delay={1500}
-            > */}
+
             <ul>
               <li>TypeScript</li>
               <li>React</li>
@@ -57,7 +41,6 @@ const About: React.FC = () => {
               <li>Node.js</li>
               <li>MongoDB</li>
             </ul>
-            {/* </Fade> */}
             {/* // TODO: Maybe merge skills section into here as a second column, so that I have something to take up horizontal space in About for? (or take a photo of myself?)*/}
           </div>
         </div>
