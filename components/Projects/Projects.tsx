@@ -17,9 +17,9 @@ const projects: ProjectProps[] = [
     title: 'Find My IP',
     description: 'TODO: description',
     technologies: ['Next.js', 'React'],
-    github: 'https://github.com/GaryJX/<todo>',
+    github: 'https://github.com/GaryJX/find-my-ip',
     demo: 'https://garyjx-find-my-ip.vercel.app/',
-    screenshot: '/projects/find-my-ip.png',
+    screenshot: '/projects/find-my-ip.jpg',
   },
 ]
 
