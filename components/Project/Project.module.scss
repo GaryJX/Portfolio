@@ -10,18 +10,20 @@
       grid-area: 1 / 1 / -1 / 7;
       grid-column: 1 / -1;
       padding: 2rem;
-      // background-color: hsl(var(--hue-color), 28%, 17%, 0.8);
       position: relative;
-      // text-align: right;
       display: flex;
       flex-direction: column;
-      // align-items: flex-end;
       gap: 1em;
 
       .projectTitle {
         font-weight: 600;
         font-size: 1.5rem;
         color: var(--color-text-heading);
+
+        &:hover,
+        &:focus-visible {
+          color: var(--color-primary);
+        }
       }
 
       .projectDescription {
@@ -39,7 +41,6 @@
       .links {
         display: flex;
         align-items: center;
-        // justify-content: flex-end;
         gap: 1em;
 
         a {
@@ -69,6 +70,10 @@
         border-radius: 4px;
         background-color: hsl(var(--hue-color), 25%, 25%);
         mix-blend-mode: multiply;
+
+        @include mixins.min-mq(sm) {
+          display: none;
+        }
       }
 
       & > div {
@@ -86,7 +91,8 @@
 
     @include mixins.min-mq(sm) {
       .projectContent {
-        grid-column: 7 / -1;
+        padding: 0;
+        grid-column: 6 / -1;
         text-align: right;
         align-items: flex-end;
       }
@@ -96,7 +102,7 @@
       }
     }
 
-    @include mixins.min-mq(lg) {
+    @include mixins.min-mq(xl) {
       .projectContent {
         grid-column: 7 / -2;
       }
@@ -109,19 +115,11 @@
 
   &:nth-child(even) {
     .project {
-      .projectContent {
-        // grid-column: 1 / 7;
-        text-align: left;
-        align-items: flex-start;
-      }
-
-      .projectImage {
-        // grid-column: 6 / -1;
-      }
-
-      @include mixins.min-mq(md) {
+      @include mixins.min-mq(sm) {
         .projectContent {
-          grid-column: 1 / 7;
+          grid-column: 1 / 8;
+          text-align: left;
+          align-items: flex-start;
         }
 
         .projectImage {
@@ -129,7 +127,7 @@
         }
       }
 
-      @include mixins.min-mq(lg) {
+      @include mixins.min-mq(xl) {
         .projectContent {
           grid-column: 2 / 7;
         }

@@ -22,7 +22,14 @@ const Project: React.FC<ProjectProps> = (props) => {
     <Fade className={styles.projectWrapper} triggerOnce direction="up">
       <div className={styles.project}>
         <div className={styles.projectContent}>
-          <h3 className={styles.projectTitle}>{title}</h3>
+          <a
+            href={demo}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.projectTitle}
+          >
+            {title}
+          </a>
           <div className={styles.projectDescription}>{description}</div>
           <ul className={styles.projectStack}>
             {technologies.map((tech, index) => (
