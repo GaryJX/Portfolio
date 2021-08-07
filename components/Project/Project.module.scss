@@ -8,12 +8,14 @@
 
     .projectContent {
       grid-area: 1 / 1 / -1 / 7;
-      grid-column: 7 / -1;
+      grid-column: 1 / -1;
+      padding: 2rem;
+      // background-color: hsl(var(--hue-color), 28%, 17%, 0.8);
       position: relative;
-      text-align: right;
+      // text-align: right;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      // align-items: flex-end;
       gap: 1em;
 
       .projectTitle {
@@ -37,7 +39,7 @@
       .links {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        // justify-content: flex-end;
         gap: 1em;
 
         a {
@@ -55,10 +57,23 @@
 
     .projectImage {
       grid-area: 1 / 6 / -1 / -1;
-      grid-column: 1 / 8;
+      grid-column: 1 / -1;
+      position: relative;
+      z-index: -1;
+      height: 100%;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 4px;
+        background-color: hsl(var(--hue-color), 25%, 25%);
+        mix-blend-mode: multiply;
+      }
 
       & > div {
         position: static !important;
+        height: 100%;
 
         & > img {
           position: static !important;
@@ -66,6 +81,18 @@
           width: 100% !important;
           height: 100% !important;
         }
+      }
+    }
+
+    @include mixins.min-mq(sm) {
+      .projectContent {
+        grid-column: 7 / -1;
+        text-align: right;
+        align-items: flex-end;
+      }
+
+      .projectImage {
+        grid-column: 1 / 8;
       }
     }
 
@@ -83,13 +110,23 @@
   &:nth-child(even) {
     .project {
       .projectContent {
-        grid-column: 1 / 7;
+        // grid-column: 1 / 7;
         text-align: left;
         align-items: flex-start;
       }
 
       .projectImage {
-        grid-column: 6 / -1;
+        // grid-column: 6 / -1;
+      }
+
+      @include mixins.min-mq(md) {
+        .projectContent {
+          grid-column: 1 / 7;
+        }
+
+        .projectImage {
+          grid-column: 6 / -1;
+        }
       }
 
       @include mixins.min-mq(lg) {

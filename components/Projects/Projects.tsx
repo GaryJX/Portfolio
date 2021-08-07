@@ -6,15 +6,15 @@ import { Fade } from 'react-awesome-reveal'
 
 const projects: ProjectProps[] = [
   // {},
-  // {
-  //   title: 'Video Chat App',
-  //   description:
-  //     'A web app for finding your public information based on IP address including ISP, location, and time zone.',
-  //   technologies: ['Next.js', 'React'],
-  //   github: 'https://github.com/GaryJX/<todo>',
-  //   demo: 'https://<todo>.vercel.app',
-  //   screenshotSrc: '/projects/find-my-ip-expanded.jpg',
-  // },
+  {
+    title: 'Video Chat App',
+    description:
+      'A web app for finding your public information based on IP address including ISP, location, and time zone.',
+    technologies: ['Next.js', 'React'],
+    github: 'https://github.com/GaryJX/<todo>',
+    demo: 'https://<todo>.vercel.app',
+    screenshotSrc: '/projects/find-my-ip-expanded.jpg',
+  },
   {
     title: 'Find My IP',
     description:
