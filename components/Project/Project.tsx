@@ -20,7 +20,7 @@ const Project: React.FC<ProjectProps> = (props) => {
       <div className={styles.projectContent}>
         <h3 className={styles.projectTitle}>{title}</h3>
         <div className={styles.projectDescription}>{description}</div>
-        <ul>
+        <ul className={styles.projectStack}>
           {technologies.map((tech) => (
             <li>{tech}</li>
           ))}
