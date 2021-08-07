@@ -16,7 +16,8 @@ const projects: ProjectProps[] = [
   // },
   {
     title: 'Find My IP',
-    description: 'TODO: description',
+    description:
+      'A web app for finding your public information based on IP address including ISP, location, and time zone.',
     technologies: ['Next.js', 'React'],
     github: 'https://github.com/GaryJX/find-my-ip',
     demo: 'https://garyjx-find-my-ip.vercel.app/',
