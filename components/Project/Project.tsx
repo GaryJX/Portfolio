@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './Project.module.scss'
+import { FaGithub } from 'react-icons/fa'
+import { FiExternalLink } from 'react-icons/fi'
 
 export type ProjectProps = {
   title: string
@@ -26,8 +28,12 @@ const Project: React.FC<ProjectProps> = (props) => {
           ))}
         </ul>
         <div className={styles.links}>
-          <div>TODO: Github</div>
-          <div>TODO: Demo</div>
+          {/* <div> */}
+          <FaGithub />
+          {/* </div> */}
+          {/* <div> */}
+          <FiExternalLink />
+          {/* </div> */}
         </div>
       </div>
       <div className={styles.projectImage}>
