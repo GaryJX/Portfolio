@@ -5,9 +5,15 @@
 
   .projectContent {
     grid-area: 1 / 1 / -1 / 7;
-    grid-column: 5 / -1;
+    grid-column: 6 / -1;
     position: relative;
     text-align: right;
+
+    .projectDescription {
+      background-color: var(--color-background-alt);
+      border-radius: 4px;
+      padding: 1.5rem;
+    }
 
     .links {
       display: flex;
