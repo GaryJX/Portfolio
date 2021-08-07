@@ -1,66 +1,82 @@
-.project {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
+.projectWrapper {
+  .project {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
 
-  .projectContent {
-    grid-area: 1 / 1 / -1 / 7;
-    grid-column: 7 / -2;
-    position: relative;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1em;
-
-    .projectTitle {
-      font-weight: 600;
-      font-size: 1.5rem;
-    }
-
-    .projectDescription {
-      background-color: var(--color-background-alt);
-      border-radius: 4px;
-      padding: 1.5rem;
-    }
-
-    .projectStack {
+    .projectContent {
+      grid-area: 1 / 1 / -1 / 7;
+      grid-column: 7 / -2;
+      position: relative;
+      text-align: right;
       display: flex;
-      gap: 1rem;
-      font-style: italic;
-    }
-
-    .links {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
       gap: 1em;
 
-      a {
-        color: var(--color-text-normal);
-        display: flex;
-        font-size: 1.25rem;
+      .projectTitle {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
 
-        &:hover,
-        &:focus-visible {
-          color: var(--color-primary);
+      .projectDescription {
+        background-color: var(--color-background-alt);
+        border-radius: 4px;
+        padding: 1.5rem;
+      }
+
+      .projectStack {
+        display: flex;
+        gap: 1rem;
+        font-style: italic;
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1em;
+
+        a {
+          color: var(--color-text-normal);
+          display: flex;
+          font-size: 1.25rem;
+
+          &:hover,
+          &:focus-visible {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    .projectImage {
+      grid-area: 1 / 6 / -1 / -1;
+      grid-column: 2 / 8;
+
+      & > div {
+        position: static !important;
+
+        & > img {
+          position: static !important;
+          border-radius: 4px;
+          width: 100% !important;
+          height: 100% !important;
         }
       }
     }
   }
 
-  .projectImage {
-    grid-area: 1 / 6 / -1 / -1;
-    grid-column: 2 / 8;
+  &:nth-child(even) {
+    .project {
+      .projectContent {
+        grid-column: 2 / 7;
+        text-align: left;
+        align-items: flex-start;
+      }
 
-    & > div {
-      position: static !important;
-
-      & > img {
-        position: static !important;
-        border-radius: 4px;
-        width: 100% !important;
-        height: 100% !important;
+      .projectImage {
+        grid-column: 6 / -2;
       }
     }
   }

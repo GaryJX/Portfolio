@@ -12,7 +12,7 @@ const projects: ProjectProps[] = [
   //   technologies: ['Next.js', 'React'],
   //   github: 'https://github.com/GaryJX/<todo>',
   //   demo: 'https://<todo>.vercel.app',
-  //   screenshotSrc: '/todo/path/to/image',
+  //   screenshotSrc: '/projects/find-my-ip-expanded.jpg',
   // },
   {
     title: 'Find My IP',
@@ -30,10 +30,12 @@ const Projects: React.FC = () => {
     <div className={styles.projects}>
       <Fade triggerOnce direction="up">
         <SectionHeader title="Projects" />
+      </Fade>
+      <div className={styles.projectList}>
         {projects.map((props, index) => (
           <Project key={index} {...props} />
         ))}
-      </Fade>
+      </div>
     </div>
   )
 }
