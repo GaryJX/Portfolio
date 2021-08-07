@@ -8,6 +8,22 @@
     grid-column: 5 / -1;
     position: relative;
     text-align: right;
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      a {
+        color: var(--color-text-normal);
+        display: flex;
+
+        &:hover,
+        &:focus-visible {
+          color: var(--color-primary);
+        }
+      }
+    }
   }
 
   .projectImage {
