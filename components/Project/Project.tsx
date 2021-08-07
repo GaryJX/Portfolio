@@ -38,6 +38,7 @@ const Project: React.FC<ProjectProps> = (props) => {
       </div>
       <div className={styles.projectImage}>
         <Image
+          loading="eager"
           src={screenshotSrc}
           alt="Find My IP Project"
           layout="fill"
