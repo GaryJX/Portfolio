@@ -28,10 +28,10 @@ const Project: React.FC<ProjectProps> = (props) => {
           ))}
         </ul>
         <div className={styles.links}>
-          <a href={github} target="_blank">
+          <a href={github} target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
-          <a href={demo} target="_blank">
+          <a href={demo} target="_blank" rel="noreferrer">
             <FiExternalLink />
           </a>
         </div>
