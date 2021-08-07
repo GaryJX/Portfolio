@@ -21,7 +21,7 @@ const About: React.FC = () => {
               development internships during my undergraduate studies. I have
               previously interned at{' '}
               <a href="https://verto.health/" target="_blank" rel="noreferrer">
-                Verto
+                Verto Health
               </a>
               , and I am currently finishing up a 16-month internship at{' '}
               <a href="https://www.ibm.com/" target="_blank" rel="noreferrer">
