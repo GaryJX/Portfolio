@@ -28,12 +28,12 @@ const Project: React.FC<ProjectProps> = (props) => {
           ))}
         </ul>
         <div className={styles.links}>
-          {/* <div> */}
-          <FaGithub />
-          {/* </div> */}
-          {/* <div> */}
-          <FiExternalLink />
-          {/* </div> */}
+          <a href={github} target="_blank">
+            <FaGithub />
+          </a>
+          <a href={demo} target="_blank">
+            <FiExternalLink />
+          </a>
         </div>
       </div>
       <div className={styles.projectImage}>
