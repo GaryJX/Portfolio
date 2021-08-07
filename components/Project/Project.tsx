@@ -23,8 +23,8 @@ const Project: React.FC<ProjectProps> = (props) => {
         <h3 className={styles.projectTitle}>{title}</h3>
         <div className={styles.projectDescription}>{description}</div>
         <ul className={styles.projectStack}>
-          {technologies.map((tech) => (
-            <li>{tech}</li>
+          {technologies.map((tech, index) => (
+            <li key={index}>{tech}</li>
           ))}
         </ul>
         <div className={styles.links}>
