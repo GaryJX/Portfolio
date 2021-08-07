@@ -31,9 +31,9 @@ const Projects: React.FC = () => {
       <Fade triggerOnce direction="up">
         <SectionHeader title="Projects" />
         <p>Coming soon...</p>
-        {/* {projects.map((props, index) => (
+        {projects.map((props, index) => (
           <Project key={index} {...props} />
-        ))} */}
+        ))}
       </Fade>
     </div>
   )

@@ -18,8 +18,8 @@ const Project: React.FC<ProjectProps> = (props) => {
   return (
     <div className={styles.project}>
       <div className={styles.projectContent}>
-        <h3>{title}</h3>
-        <div>{description}</div>
+        <h3 className={styles.projectTitle}>{title}</h3>
+        <div className={styles.projectDescription}>{description}</div>
         <ul>
           {technologies.map((tech) => (
             <li>{tech}</li>
