@@ -21,7 +21,7 @@ const projects: ProjectProps[] = [
     technologies: ['React', 'Next.js', 'Geo IP API'],
     github: 'https://github.com/GaryJX/find-my-ip',
     demo: 'https://garyjx-find-my-ip.vercel.app/',
-    screenshotSrc: '/projects/find-my-ip.jpg',
+    screenshotSrc: '/projects/find-my-ip-expanded.jpg',
   },
 ]
 
@@ -30,10 +30,9 @@ const Projects: React.FC = () => {
     <div className={styles.projects}>
       <Fade triggerOnce direction="up">
         <SectionHeader title="Projects" />
-        <p>Coming soon...</p>
-        {/* {projects.map((props, index) => (
+        {projects.map((props, index) => (
           <Project key={index} {...props} />
-        ))} */}
+        ))}
       </Fade>
     </div>
   )
