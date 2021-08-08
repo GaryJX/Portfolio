@@ -34,7 +34,11 @@ const Projects: React.FC = () => {
       </Fade>
       <div className={styles.projectList}>
         {projects.map((props, index) => (
-          <Project key={index} {...props} />
+          <Project
+            key={index}
+            {...props}
+            direction={index % 2 === 0 ? 'left' : 'right'}
+          />
         ))}
       </div>
     </div>

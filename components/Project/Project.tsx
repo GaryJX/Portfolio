@@ -12,14 +12,22 @@ export type ProjectProps = {
   github: string
   demo: string
   screenshotSrc: string
+  direction?: 'left' | 'right'
 }
 
 const Project: React.FC<ProjectProps> = (props) => {
-  const { title, description, technologies, github, demo, screenshotSrc } =
-    props
-  // TODO: Display projects
+  const {
+    title,
+    description,
+    technologies,
+    github,
+    demo,
+    screenshotSrc,
+    direction = 'left',
+  } = props
+
   return (
-    <Fade className={styles.projectWrapper} triggerOnce direction="up">
+    <Fade className={styles.projectWrapper} triggerOnce direction={direction}>
       <div className={styles.project}>
         <div className={styles.projectContent}>
           <a
