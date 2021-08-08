@@ -13,6 +13,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
+      z-index: 2;
       gap: 1em;
 
       .projectTitle {
@@ -61,7 +62,6 @@
       grid-area: 1 / 6 / -1 / -1;
       grid-column: 1 / -1;
       position: relative;
-      z-index: -1;
       height: 100%;
 
       &::before {
@@ -70,10 +70,19 @@
         inset: 0;
         border-radius: 4px;
         background-color: hsl(var(--hue-color), 25%, 25%);
+        transition: opacity 200ms linear;
         mix-blend-mode: multiply;
+      }
 
-        @include mixins.min-mq(sm) {
-          display: none;
+      @include mixins.min-mq(sm) {
+        &::before {
+          background-color: hsl(var(--hue-color), 25%, 70%);
+        }
+
+        &:hover {
+          &::before {
+            opacity: 0;
+          }
         }
       }
 

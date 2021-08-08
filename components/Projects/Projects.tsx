@@ -5,16 +5,15 @@ import styles from './Projects.module.scss'
 import { Fade } from 'react-awesome-reveal'
 
 const projects: ProjectProps[] = [
-  // {},
-  // {
-  //   title: 'Video Chat App',
-  //   description:
-  //     'A web app for finding your public information based on IP address including ISP, location, and time zone.',
-  //   technologies: ['Next.js', 'React'],
-  //   github: 'https://github.com/GaryJX/<todo>',
-  //   demo: 'https://<todo>.vercel.app',
-  //   screenshotSrc: '/projects/find-my-ip-expanded.jpg',
-  // },
+  {
+    title: 'Video Chat App',
+    description:
+      'A web application to connect online with others via video chat, using WebSocket and WebRTC protocols.',
+    technologies: ['React', 'TypeScript', 'Socket.IO'],
+    github: 'https://github.com/GaryJX/video-chat-app',
+    demo: 'https://garyjx-video-chat-app.vercel.app',
+    screenshotSrc: '/projects/video-chat-app.jpg',
+  },
   {
     title: 'Find My IP',
     description:
