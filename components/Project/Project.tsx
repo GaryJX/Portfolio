@@ -53,7 +53,12 @@ const Project: React.FC<ProjectProps> = (props) => {
             </a>
           </div>
         </div>
-        <div className={styles.projectImage}>
+        <a
+          href={demo}
+          target="_blank"
+          rel="noreferrer"
+          className={styles.projectImage}
+        >
           <Image
             loading="eager"
             src={screenshotSrc}
@@ -61,7 +66,7 @@ const Project: React.FC<ProjectProps> = (props) => {
             layout="fill"
             objectFit="cover"
           />
-        </div>
+        </a>
       </div>
     </Fade>
   )
