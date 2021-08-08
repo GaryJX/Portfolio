@@ -5,8 +5,10 @@ import HamburgerMenu from '@/components/HamburgerMenu/HamburgerMenu'
 import LogoTitle from '@/components/LogoTitle/LogoTitle'
 import ThemeToggle from '@/components/ThemeToggle/ThemeToggle'
 import styles from './NavBar.module.scss'
+import useScrollSectionHighlight from '@/hooks/useScrollSectionHighlight'
 
 const NavBar: React.FC = () => {
+  useScrollSectionHighlight(styles.navMenu, styles.activeLink)
   const [menuOpen, setMenuOpen] = useState(false)
   const isLargeNavSize = useMediaQuery({
     query: '(min-width: 48em)',
