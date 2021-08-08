@@ -1,14 +1,16 @@
-import React from 'react'
-import { AppProps } from 'next/app'
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga'
 import Head from 'next/head'
+import { AppProps } from 'next/app'
 import Layout from '@/components/Layout/Layout'
 import '@/styles/globals.scss'
-import ReactGA from 'react-ga'
 
 const TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!
 ReactGA.initialize(TRACKING_ID)
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
+  useEffect(() => {}, [])
+
   return (
     <>
       <Head>
