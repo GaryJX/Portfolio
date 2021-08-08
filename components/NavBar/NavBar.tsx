@@ -41,7 +41,6 @@ const NavBar: React.FC = () => {
             duration={isLargeNavSize ? 500 : 0}
             delay={isLargeNavSize ? 300 : 0}
           >
-            {/* // TODO: Change hrefs to JS clicks instead (so that if a user refreshes page, it won't auto-scroll) */}
             <ul>
               <li>
                 <a href="#home" onClick={handleClickNav}>
