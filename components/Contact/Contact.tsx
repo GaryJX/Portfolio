@@ -1,15 +1,54 @@
-import React, { useState } from 'react'
-import SectionHeader from '@/components/SectionHeader/SectionHeader'
+import React, { FormEvent } from 'react'
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
-import styles from './Contact.module.scss'
 import { Fade } from 'react-awesome-reveal'
+import emailjs from 'emailjs-com'
+import SectionHeader from '@/components/SectionHeader/SectionHeader'
+import styles from './Contact.module.scss'
 
-// TODO: Eventually add an EmailJS form to the Contact section
+// TODO: Eventually add an EmailJS form to the Contact se ction
 const Contact: React.FC = () => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        e.target as HTMLFormElement,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
+      )
+      .then((response) => {
+        console.log(response)
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+  }
+
   return (
     <div className={styles.contact}>
       <Fade triggerOnce direction="up">
         <SectionHeader title="Contact Me" />
+        {/* // TODO: Add contact form eventually */}
+        {/* <div>
+          <form onSubmit={sendEmail}>
+            <div>
+              <label htmlFor="name">Your Name</label>
+              <input name="name" />
+            </div>
+            <div>
+              <label htmlFor="email">Your Email</label>
+
+              <input name="email" />
+            </div>
+            <div>
+              <label htmlFor="name">Message</label>
+
+              <input name="message" />
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div> */}
         <div className={styles.container}>
           <a href="https://github.com/GaryJX" target="_blank" rel="noreferrer">
             <FaGithub />
