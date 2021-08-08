@@ -11,7 +11,7 @@ const projects: ProjectProps[] = [
       'A web application to connect online with others via video chat, using WebSocket and WebRTC protocols.',
     technologies: ['React', 'TypeScript', 'Socket.IO'],
     github: 'https://github.com/GaryJX/video-chat-app',
-    demo: 'https://garyjx-video-chat-app.vercel.app',
+    demo: 'https://garyjx-video-chat.vercel.app',
     screenshotSrc: '/projects/video-chat-app.jpg',
   },
   {
