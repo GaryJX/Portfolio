@@ -20,23 +20,31 @@ const useScrollSectionHighlight = (navClass: string, activeClass: string) => {
 
   const handleScroll = () => {
     const scrollY = window.pageYOffset
-    console.log({ scrollY })
+    const reachedBottom =
+      document.body.getBoundingClientRect().bottom - 1 <= window.innerHeight
 
-    console.log({ sections })
-
-    sections.forEach((section) => {
+    sections.forEach((section, index) => {
       const sectionHeight = section.offsetHeight
       const sectionTop = section.offsetTop - 65
       const sectionId = section.getAttribute('id')
 
-      const selectionElem = document?.querySelector(
+      const sectionElem = document?.querySelector(
         `.${navClass} a[href*=${sectionId}]`
       )
 
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        selectionElem?.classList.add(activeClass)
+      if (reachedBottom) {
+        if (index === sections.length - 1) {
+          sectionElem?.classList.add(activeClass)
+        } else {
+          sectionElem?.classList.remove(activeClass)
+        }
+      } else if (
+        scrollY > sectionTop &&
+        scrollY <= sectionTop + sectionHeight
+      ) {
+        sectionElem?.classList.add(activeClass)
       } else {
-        selectionElem?.classList.remove(activeClass)
+        sectionElem?.classList.remove(activeClass)
       }
     })
   }

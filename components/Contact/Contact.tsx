@@ -5,7 +5,6 @@ import emailjs from 'emailjs-com'
 import SectionHeader from '@/components/SectionHeader/SectionHeader'
 import styles from './Contact.module.scss'
 
-// TODO: Eventually add an EmailJS form to the Contact se ction
 const Contact: React.FC = () => {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
