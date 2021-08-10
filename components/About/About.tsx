@@ -37,7 +37,7 @@ const About: React.FC = () => {
               <li>TypeScript</li>
               <li>React</li>
               <li>Next.js</li>
-              <li>Golang</li>
+              <li>Go</li>
               <li>Node.js</li>
               <li>MongoDB</li>
             </ul>
