@@ -12,7 +12,7 @@ const projects: ProjectProps[] = [
       'A web application to connect online with others via video chat, using WebSocket and WebRTC protocols.',
     technologies: ['React', 'TypeScript', 'Socket.IO'],
     github: 'https://github.com/GaryJX/video-chat-app',
-    demo: 'https://garyjx-video-chat.vercel.app',
+    demo: 'https://video-chat.garyxie.me',
     screenshotSrc: '/projects/video-chat-app.jpg',
   },
   {
@@ -21,7 +21,7 @@ const projects: ProjectProps[] = [
       'A web app for finding your public information based on IP address including ISP, location, and time zone.',
     technologies: ['React', 'TypeScript', 'Geo Location IP API'],
     github: 'https://github.com/GaryJX/find-my-ip',
-    demo: 'https://garyjx-find-my-ip.vercel.app/',
+    demo: 'https://find-my-ip.garyxie.me',
     screenshotSrc: '/projects/find-my-ip-expanded.jpg',
   },
 ]

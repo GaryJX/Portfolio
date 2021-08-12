@@ -1,7 +1,7 @@
 <div align="center">
   <img src="public/logo.svg" width="100">
   <h1 align="center">Gary Xie's Portfolio</h1>
-  <a href="https://garyxie.vercel.app">garyxie.vercel.app</a>
+  <a href="https://garyxie.me">garyxie.me</a>
   <br>
   <p>
   My portfolio website, built with Next.js and TypeScript.
