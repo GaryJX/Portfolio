@@ -5,11 +5,19 @@ import styles from './Projects.module.scss'
 import { Fade } from 'react-awesome-reveal'
 
 const projects: ProjectProps[] = [
-  // {},
+  {
+    title: 'Code Cube',
+    description:
+      'An online front‑end development live code editor for protoyping with HTML, CSS, and JavaScript. Authenticates with Github and Google OAuth providers.',
+    technologies: ['Go', 'MongoDB', 'React', 'TypeScript'],
+    github: 'https://github.com/GaryJX/code-cube',
+    demo: 'https://code-cube.garyxie.me',
+    screenshotSrc: '/projects/code-cube.jpg',
+  },
   {
     title: 'Video Chat App',
     description:
-      'A web application to connect online with others via video chat, using WebSocket and WebRTC protocols.',
+      'A web application to communicate with others online via video chat, using WebSocket and WebRTC protocols.',
     technologies: ['React', 'TypeScript', 'Socket.IO'],
     github: 'https://github.com/GaryJX/video-chat-app',
     demo: 'https://video-chat.garyxie.me',
