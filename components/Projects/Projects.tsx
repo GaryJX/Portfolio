@@ -8,7 +8,7 @@ const projects: ProjectProps[] = [
   {
     title: 'Code Cube',
     description:
-      'An online front‑end development live code editor for protoyping with HTML, CSS, and JavaScript. Authenticates with Github and Google OAuth providers.',
+      'An online front‑end development live code editor for prototyping with HTML, CSS, and JavaScript. Authenticates with Github and Google OAuth providers.',
     technologies: ['Go', 'MongoDB', 'React', 'TypeScript'],
     github: 'https://github.com/GaryJX/code-cube',
     demo: 'https://code-cube.garyxie.me',
