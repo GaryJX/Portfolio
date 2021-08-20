@@ -5,10 +5,12 @@ import { AppProps } from 'next/app'
 import Layout from '@/components/Layout/Layout'
 import '@/styles/globals.scss'
 
-const TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!
-console.log(TRACKING_ID)
-ReactGA.initialize(TRACKING_ID, { debug: true })
-ReactGA.pageview(window.location.pathname + window.location.search)
+if (process.browser) {
+  const TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!
+  console.log(TRACKING_ID)
+  ReactGA.initialize(TRACKING_ID, { debug: true })
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
