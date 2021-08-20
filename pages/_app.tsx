@@ -7,8 +7,7 @@ import '@/styles/globals.scss'
 
 if (process.browser) {
   const TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!
-  console.log(TRACKING_ID)
-  ReactGA.initialize(TRACKING_ID, { debug: true })
+  ReactGA.initialize(TRACKING_ID)
   ReactGA.pageview(window.location.pathname + window.location.search)
 }
 
