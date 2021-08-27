@@ -23,7 +23,7 @@ const About: React.FC = () => {
               <a href="https://verto.health/" target="_blank" rel="noreferrer">
                 Verto Health
               </a>
-              , and I am currently finishing up a 16-month internship at{' '}
+              , and I recently finished a 16-month internship at{' '}
               <a href="https://www.ibm.com/" target="_blank" rel="noreferrer">
                 IBM
               </a>
