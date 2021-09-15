@@ -34,10 +34,10 @@ const About: React.FC = () => {
             <p>Here are a few technologies I’ve been working with recently:</p>
 
             <ul>
+              <li>C++</li>
+              <li>Go</li>
               <li>TypeScript</li>
               <li>React</li>
-              <li>Next.js</li>
-              <li>Go</li>
               <li>Node.js</li>
               <li>MongoDB</li>
             </ul>
