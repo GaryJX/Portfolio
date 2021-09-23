@@ -38,7 +38,7 @@ const LogoTitle: React.FC = () => {
           />
         </g>
       </svg>
-      <svg
+      {/* <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 901.000000 224.000000"
@@ -187,7 +187,7 @@ const LogoTitle: React.FC = () => {
               62 7 65 14 14 148 7 171 -9z"
           />
         </g>
-      </svg>
+      </svg> */}
     </a>
   )
 }

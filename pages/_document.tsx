@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Gary Xie is a software developer specializing in building extraordinary experiences for the web."
+            content="Gary Xie is a software engineer specializing in creating extraordinary experiences for the web."
           />
         </Head>
         <body>

@@ -15,7 +15,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Gary Xie | Software Developer</title>
+        <title>Gary Xie | Software Engineer</title>
         <link rel="icon" href="/logo.svg" />
         <meta
           name="viewport"

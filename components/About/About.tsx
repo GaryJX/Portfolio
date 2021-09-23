@@ -12,9 +12,9 @@ const About: React.FC = () => {
           <div className={styles.aboutText}>
             <p>Hello, my name is Gary!</p>
             <p>
-              I’m a software developer based in Toronto, Canada, and I am
-              currently in my 3rd year of studying Computer Science at
-              University of Toronto.
+              I’m a software engineer based in Toronto, Canada, currently in my
+              junior year studying Computer Science at the University of
+              Toronto, majoring in Software Engineering.
             </p>
             <p>
               I’ve been lucky enough to experience a variety of software
