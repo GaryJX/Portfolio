@@ -1,8 +1,9 @@
 import Hero from '@/components/Hero/Hero'
 import About from '@/components/About/About'
-import Contact from '@/components/Contact/Contact'
+import Skills from '@/components/Skills/Skills'
 import WorkExperience from '@/components/WorkExperience/WorkExperience'
 import Projects from '@/components/Projects/Projects'
+import Contact from '@/components/Contact/Contact'
 
 export const Home: React.FC = () => {
   return (
@@ -13,10 +14,12 @@ export const Home: React.FC = () => {
       <section id="about">
         <About />
       </section>
-      {/* <section id="skills"></section> */}
-      {/* <section id="experience">
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="experience">
         <WorkExperience />
-      </section> */}
+      </section>
       <section id="projects">
         <Projects />
       </section>
