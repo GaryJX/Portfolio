@@ -13,8 +13,8 @@ const About: React.FC = () => {
             <p>Hello, my name is Gary!</p>
             <p>
               I’m a software engineer based in Toronto, Canada, currently in my
-              junior year studying Computer Science at the University of
-              Toronto, majoring in Software Engineering.
+              junior year of Computer Science at the University of Toronto,
+              majoring in Software Engineering.
             </p>
             <p>
               I’ve been lucky enough to experience a variety of software

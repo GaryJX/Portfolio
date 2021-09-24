@@ -35,7 +35,8 @@ const Hero: React.FC = () => {
         <h1 className={styles.subtitle}>I am a Software Engineer.</h1>
         <p className={styles.copyText}>
           I specialize in creating extraordinary experiences for the web. I am
-          also a junior in Computer Science at the University of Toronto.
+          currently a junior at the University of Toronto, majoring in Computer
+          Science and Software Engineering.
         </p>
         <div className={styles.callToActionContainer}>
           <a
