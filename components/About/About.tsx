@@ -30,7 +30,7 @@ const About: React.FC = () => {
               .
             </p>
           </div>
-          <div className={styles.skills}>
+          {/* <div className={styles.skills}>
             <p>Here are a few technologies I’ve been working with recently:</p>
 
             <ul>
@@ -41,8 +41,8 @@ const About: React.FC = () => {
               <li>Node.js</li>
               <li>MongoDB</li>
             </ul>
-            {/* // TODO: Maybe merge skills section into here as a second column, so that I have something to take up horizontal space in About for? (or take a photo of myself?)*/}
-          </div>
+          </div> */}
+          {/* // TODO: Maybe merge skills section into here as a second column, so that I have something to take up horizontal space in About for? (or take a photo of myself?)*/}
         </div>
       </Fade>
     </div>

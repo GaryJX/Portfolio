@@ -2,26 +2,45 @@ import React, { useState } from 'react'
 import SectionHeader from '@/components/SectionHeader/SectionHeader'
 import styles from './Skills.module.scss'
 import { Fade } from 'react-awesome-reveal'
+import SkillsSection from './SkillsSection/SkillsSection'
+
+const skills = {
+  Languages: [
+    'Python',
+    'JavaScript/TypeScript',
+    'C',
+    'C++',
+    'Java',
+    'Go',
+    'SQL',
+    'Bash',
+    'HTML/CSS',
+  ],
+  Frameworks: [
+    'React',
+    'Vue',
+    'Redux',
+    'Flask',
+    'Node.js',
+    'Express',
+    'MySQL',
+    'PostgreSQL',
+    'MongoDB',
+    'Redis',
+  ],
+  Tools: ['Git', 'Docker', 'Jenkins', 'Agile', 'Scrum', 'Jira', 'Unix/Linux'],
+}
 
 const Skills: React.FC = () => {
   return (
     <div className={styles.skills}>
       <Fade triggerOnce direction="up">
         <SectionHeader title="Skills" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-          ducimus ad minima corporis soluta vel similique rem enim tempora
-          incidunt, consequuntur architecto a nisi quibusdam aspernatur fugiat
-          beatae dolor. Dolore excepturi ratione ipsa illum totam sunt earum ea
-          assumenda veritatis? Dolorem dignissimos est tenetur, molestias
-          aliquam, animi magni at similique cumque qui sequi sunt nobis?
-          Officiis eos nam qui placeat. Voluptatem cumque soluta fuga, eos,
-          totam quae similique perferendis mollitia, officiis provident iusto
-          commodi deleniti voluptates sed illo maiores dolores. Obcaecati,
-          aspernatur tempore modi officia laborum ad ratione numquam praesentium
-          eos maxime! Inventore sit soluta saepe totam laudantium blanditiis
-          quis.
-        </p>
+        <div className={styles.skillSection}>
+          {Object.entries(skills).map(([section, skills]) => (
+            <SkillsSection key={section} title={section} skills={skills} />
+          ))}
+        </div>
       </Fade>
     </div>
   )
