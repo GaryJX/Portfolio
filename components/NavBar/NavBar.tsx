@@ -57,9 +57,9 @@ const NavBar: React.FC = () => {
               <li>
                 <a href="#skills">Skills</a>
               </li>
-              {/* <li>
+              <li>
                 <a href="#experience">Experience</a>
-              </li> */}
+              </li>
               <li>
                 <a href="#projects" onClick={handleClickNav}>
                   Projects
