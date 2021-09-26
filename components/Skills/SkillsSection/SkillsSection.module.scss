@@ -1,0 +1,11 @@
+.skillsSection {
+  ul {
+    li {
+      &::before {
+        content: '▹';
+        color: hsl(var(--hue-color), 70%, 50%);
+        padding-right: 0.5em;
+      }
+    }
+  }
+}

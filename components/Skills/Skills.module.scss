@@ -1,0 +1,17 @@
+@use '../../styles/mixins';
+
+.skills {
+  // TODO: Move this to a mixin so I don't have to copy paste it to every section CSS file
+  padding: 65px 0 30px;
+
+  .skillSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+
+    @include mixins.min-mq(sm) {
+      flex-direction: row;
+    }
+  }
+}
