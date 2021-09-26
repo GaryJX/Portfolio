@@ -6,6 +6,12 @@
 
   .skillSection {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    row-gap: 1rem;
+
+    @include mixins.min-mq(sm) {
+      flex-direction: row;
+    }
   }
 }
