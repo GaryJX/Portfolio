@@ -62,12 +62,12 @@ const Contact: React.FC = () => {
             GaryJX
           </a>
           <a
-            href="mailto:gary.xie@mail.utoronto.ca"
+            href="mailto:garyxie2000@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
             <FaEnvelope />
-            gary.xie@mail.utoronto.ca
+            garyxie2000@gmail.com
           </a>
         </div>
       </Fade>
