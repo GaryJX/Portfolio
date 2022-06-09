@@ -49,12 +49,12 @@ const Contact: React.FC = () => {
           </form>
         </div> */}
         <div className={styles.container}>
-          <a href="https://github.com/GaryJX" target="_blank" rel="noreferrer">
+          <a href="https://github.com/garyjx" target="_blank" rel="noreferrer">
             <FaGithub />
             GaryJX
           </a>
           <a
-            href="https://www.linkedin.com/in/GaryJX"
+            href="https://www.linkedin.com/in/garyxie"
             target="_blank"
             rel="noreferrer"
           >
