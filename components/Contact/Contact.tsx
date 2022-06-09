@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
             rel="noreferrer"
           >
             <FaLinkedin />
-            GaryJX
+            garyxie
           </a>
           <a
             href="mailto:garyxie2000@gmail.com"
